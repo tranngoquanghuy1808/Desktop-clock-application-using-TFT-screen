@@ -1,0 +1,10 @@
+Lưu ý:
+Ở mode 240x320 của thư viện ST7789 bị lỗi màu khi chạy.
+-->Cần sửa thông số sau để chỉnh lại màu sắc:
+
+ ST77XX_INVON  ,   ST_CMD_DELAY,  //  7: hack
+      10,
+
+Ban đầu: ST77XX_INVOFF  ,   ST_CMD_DELAY,  //  7: hack
+      		10,
+Sửa OFF --> ON
